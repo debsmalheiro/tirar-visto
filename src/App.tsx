@@ -2,6 +2,7 @@ import HeroSection from "./templates/hero-section";
 import BannerWhyChooseUs from "./templates/banner-why-choose-us";
 import WhyChooseUsSection from "./templates/why-choose-us-section";
 import TopDestinationSection from "./templates/top-destination-section";
+import SpecialPackageSection from "./templates/special-package-section";
 
 export default function App() {
 
@@ -11,6 +12,7 @@ export default function App() {
       <BannerWhyChooseUs />
       <WhyChooseUsSection />
       <TopDestinationSection />
+      <SpecialPackageSection />
     </div>
   )
 }
