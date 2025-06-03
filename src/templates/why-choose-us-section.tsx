@@ -1,5 +1,5 @@
 import Button from "../components/button";
-import Family from "../assets/images/family.png";
+import Family from "../assets/images/family.jpg";
 import { Plus } from "lucide-react";
 
 export default function WhyChooseUsSection() {

@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import Button from "../components/button";
-import Video from "../assets/images/video.png";
-import FerrisWheel from "../assets/images/ferris-wheel.png";
+import Video from "../assets/images/video.jpg";
+import FerrisWheel from "../assets/images/ferris-wheel.jpg";
 import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
@@ -22,8 +22,8 @@ export default function HeroSection() {
                     </div>
 
                     <div className="md:pl-2 md:flex-1">
-                        <div>
-                            <img src={Video} alt="Vídeo" className="w-full md:w-[400px] h-auto rounded-lg mb-4" />
+                        <div className="rounded-2xl">
+                            <img src={Video} alt="Vídeo" className="w-full md:w-[400px] h-auto mb-4" />
                         </div>
                         <div className="flex justify-between items-center">
                             <div className="mr-4">
