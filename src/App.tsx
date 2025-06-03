@@ -1,5 +1,6 @@
 import HeroSection from "./templates/hero-section";
 import BannerWhyChooseUs from "./templates/banner-why-choose-us";
+import WhyChooseUsSection from "./templates/why-choose-us-section";
 
 export default function App() {
 
@@ -7,6 +8,7 @@ export default function App() {
     <div className="mt-3 md:mt-5">
       <HeroSection />
       <BannerWhyChooseUs />
+      <WhyChooseUsSection />
     </div>
   )
 }
