@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import Button from "../components/button";
 import Video from "../assets/images/video.png";
 import FerrisWheel from "../assets/images/ferris-wheel.png";
 import { ArrowRight } from "lucide-react";
@@ -14,10 +15,10 @@ export default function HeroSection() {
                 <div className="flex flex-col md:flex-row mt-6 md:mt-10">
                     <div className="md:flex-1 mb-6">
                         <p className="mb-6 md:mb-10 text-neutral-400">Com uma equipe altamente treinada, nós temos todos os procedimentos para que seu processo seja o mais tranquilo e rápido. Uma consultoria completa para você e sua família não ter nenhuma preocupação na sua viagem.</p>
-                        <div className="w-fit flex text-white py-2.5 px-5 rounded-full bg-slate-800">
+                        <Button className="py-2.5 px-5">
                             <button className="mr-2">Saiba mais</button>
                             <ArrowRight className="text-white" />
-                        </div>
+                        </Button>
                     </div>
 
                     <div className="md:pl-2 md:flex-1">
@@ -29,9 +30,9 @@ export default function HeroSection() {
                                 <p className="font-semibold">Conheça a Bruna</p>
                                 <span className="text-neutral-400">Ver vídeo</span>
                             </div>
-                            <button className="p-2 bg-slate-800 rounded-full">
+                            <Button className="p-2">
                                 <ArrowRight className="text-white" />
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>

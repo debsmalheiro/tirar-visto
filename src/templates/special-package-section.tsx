@@ -1,20 +1,21 @@
+import Button from "../components/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function SpecialPackageSection() {
     return (
         <section className="mt-10 py-10 px-4 md:px-12">
-            <button className="w-fit flex text-neutral-01 py-2.5 px-5 md:mb-3 rounded-full bg-yellow-01">Pacotes</button>
+            <Button variant="secondary" className="py-2.5 px-5 md:mb-3">Pacotes</Button>
             <div className="mt-3 mb-14 flex justify-between">
                 <div>
                     <h1 className="text-4xl md:text-5xl  font-medium">Confira nossos pacotes</h1>
                 </div>
-                <div>
-                    <button className="p-2 bg-slate-800 rounded-full">
+                <div className="flex">
+                    <Button className="p-2">
                         <ArrowLeft className="text-white" />
-                    </button>
-                    <button className="p-2 bg-slate-800 rounded-full">
+                    </Button>
+                    <Button className="p-2">
                         <ArrowRight className="text-white" />
-                    </button>
+                    </Button>
                 </div>
             </div>
 
@@ -43,7 +44,7 @@ export default function SpecialPackageSection() {
                             <p className="text-neutral-400">A partir de</p>
                             <span>R$ 890,00</span>
                         </div>
-                        <button>Contratar</button>
+                        <Button className="py-2.5 px-5 md:mb-3">Contratar</Button>
                     </div>
                 </div>
             </div>

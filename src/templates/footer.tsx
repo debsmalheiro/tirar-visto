@@ -1,4 +1,5 @@
 import { MoveUpRight } from "lucide-react";
+import Button from "../components/button";
 
 export default function Footer() {
     return (
@@ -15,7 +16,7 @@ export default function Footer() {
                             <MoveUpRight />
                         </div>
                     </div>
-                    <button>Central de Atendimento</button>
+                    <Button className="py-2.5 px-5 md:mb-3">Central de Atendimento</Button>
                 </div>
             </div>
             <div className="flex">

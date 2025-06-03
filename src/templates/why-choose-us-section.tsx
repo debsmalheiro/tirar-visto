@@ -1,3 +1,4 @@
+import Button from "../components/button";
 import Family from "../assets/images/family.png";
 import { Plus } from "lucide-react";
 
@@ -5,7 +6,7 @@ export default function WhyChooseUsSection() {
     return (
         <section className="mt-10 py-10 px-4 md:px-12">
             <div>
-                <button className="w-fit flex text-neutral-01 py-2.5 px-5 md:mb-3 rounded-full bg-yellow-01">Veja como funciona</button>
+                <Button variant="secondary" className="py-2.5 px-5 md:mb-3">Veja como funciona</Button>
                 
                 <div className="block md:block lg:flex lg:justify-between">
                     <div className="md:flex-1">
