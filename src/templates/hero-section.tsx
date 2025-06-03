@@ -2,8 +2,8 @@ import Header from "../components/header";
 
 export default function HeroSection() {
     return (
-        <section className="block md:flex">
-            <div className="md:py-[62px] md:px-10">
+        <section className="block md:flex md:ml-4">
+            <div className="flex justify-center md:p-5">
                 <Header />
                 {/* <h1 className="text-base md:text-[54px] font-medium border-b-2 border-neutral-200">Tire seu Visto conosco e não tenha nenhuma surpresa negativa!</h1> */}
                 

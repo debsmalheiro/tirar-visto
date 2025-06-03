@@ -1,25 +1,32 @@
 import Logo from '../assets/images/logo.svg';
+import Sidebar from './sidebar';
 
 export default function Header() {
+    const links = [
+        { label: 'Home', href: '/' },
+        { label: 'Quem somos', href: '/about' },
+        { label: 'Serviços', href: '/services' },
+        { label: 'Contato', href: '/contact' },
+    ];
+
     return (
-        <header className='flex'>
-            <div className='flex justify-center items-center'>
-                <img src={Logo} alt="Logo Tirar Visto" />
+        <header className='flex mt-5'>
+            <Sidebar />
+            <div className="flex justify-center md:justify-start items-center">
+                <img src={Logo} alt="Logo Tirar Visto" className="w-32 h-auto" />
             </div>
-            <nav className='hidden md:block'>
-                <ul className=''>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about">Quem somos</a>
-                    </li>
-                    <li>
-                        <a href="/services">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contato</a>
-                    </li>
+            <nav className='hidden md:block md:ml-5'>
+                <ul className='flex justify-between'>
+                    {links.map((link) => (
+                            <li key={link.href}>
+                                <a
+                                    href={link.href}
+                                    className="mr-5"
+                                >
+                                    {link.label}
+                                </a>
+                            </li>
+                        ))}
                 </ul>
             </nav>
         </header>
