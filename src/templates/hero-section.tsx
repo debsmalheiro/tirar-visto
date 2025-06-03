@@ -5,8 +5,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
     return (
-        <section className="block mx-4 md:flex md:ml-4">
-            <div className="flex flex-col md:flex-1 justify-center md:p-5">
+        <section className="block px-4 md:pl-12 md:pr-4 md:flex">
+            <div className="flex flex-col md:flex-1 justify-center">
                 <Header />
 
                 <h1 className="text-5xl md:text-[54px] mt-6 pb-6 md:mt-10 md:pb-8 text-neutral-800 font-medium border-b-2 border-neutral-200">Tire seu Visto conosco e não tenha nenhuma surpresa negativa!</h1>
@@ -53,7 +53,7 @@ export default function HeroSection() {
                     </div>
                 </div>
             </div>
-            <div className="flex mt-10 md:flex-1">
+            <div className="flex mt-10 md:mt-0 md:ml-6 md:flex-1">
                 <img src={FerrisWheel} alt="Roda gigante" className="w-full h-auto" />
             </div>
         </section>

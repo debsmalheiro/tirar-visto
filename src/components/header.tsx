@@ -10,7 +10,7 @@ export default function Header() {
     ];
 
     return (
-        <header className='flex mt-5'>
+        <header className='flex'>
             <Sidebar />
             <div className="flex justify-center md:justify-start items-center">
                 <img src={Logo} alt="Logo Tirar Visto" className="w-32 h-auto" />
