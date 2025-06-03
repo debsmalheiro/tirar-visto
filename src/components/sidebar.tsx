@@ -1,5 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import Logo from '../assets/images/logo.svg';
 
 export default function Sidebar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,16 +14,22 @@ export default function Sidebar() {
 
     return (
         <>
-            <button
-                className="md:hidden top-4 left-4 z-50 text-3xl text-gray-800"
-                onClick={() => setIsOpen(true)}
-            >
-                <Menu className='' />
-            </button>
+            <div className='flex flex-row items-center'>
+                <button
+                    className="md:hidden top-4 left-4 z-50 text-3xl text-gray-800"
+                    onClick={() => setIsOpen(true)}
+                >
+                    <Menu className='' />
+                </button>
+
+                <div className="mx-auto">
+                    <img src={Logo} alt="Logo Tirar Visto" className="w-40 h-auto" />
+                </div>
+            </div>
 
             {isOpen && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-40 z-40"
+                    className="fixed inset-0 bg-black opacity-40 z-40"
                     onClick={() => setIsOpen(false)}
                 />
             )}
