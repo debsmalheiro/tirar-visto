@@ -3,6 +3,7 @@ import BannerWhyChooseUs from "./templates/banner-why-choose-us";
 import WhyChooseUsSection from "./templates/why-choose-us-section";
 import TopDestinationSection from "./templates/top-destination-section";
 import SpecialPackageSection from "./templates/special-package-section";
+import Footer from "./templates/footer";
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
       <WhyChooseUsSection />
       <TopDestinationSection />
       <SpecialPackageSection />
+      <Footer />
     </div>
   )
 }
