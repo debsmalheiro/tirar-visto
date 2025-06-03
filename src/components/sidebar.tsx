@@ -14,9 +14,9 @@ export default function Sidebar() {
 
     return (
         <>
-            <div className='flex flex-row items-center'>
+            <div className='md:hidden flex flex-row items-center'>
                 <button
-                    className="md:hidden top-4 left-4 z-50 text-3xl text-gray-800"
+                    className="top-4 left-4 z-50 text-3xl text-gray-800"
                     onClick={() => setIsOpen(true)}
                 >
                     <Menu className='' />
