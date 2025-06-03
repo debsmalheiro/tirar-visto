@@ -21,7 +21,7 @@ export default function Header() {
                             <li key={link.href}>
                                 <a
                                     href={link.href}
-                                    className="mr-5"
+                                    className="mr-4"
                                 >
                                     {link.label}
                                 </a>
