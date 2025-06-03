@@ -3,10 +3,10 @@ import Sidebar from './sidebar';
 
 export default function Header() {
     const links = [
-        { label: 'Home', href: '/' },
-        { label: 'Quem somos', href: '/about' },
-        { label: 'Serviços', href: '/services' },
-        { label: 'Contato', href: '/contact' },
+        { label: 'Home', href: '#hero' },
+        { label: 'Quem somos', href: '#about' },
+        { label: 'Serviços', href: '#services' },
+        { label: 'Contato', href: '#footer' },
     ];
 
     return (

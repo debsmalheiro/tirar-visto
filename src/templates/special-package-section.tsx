@@ -47,7 +47,7 @@ export const specialPackages = [
 export default function SpecialPackageSection() {
 
     return (
-        <section className="mt-10 py-10 px-4 md:px-12">
+        <section id="services" className="mt-10 py-10 px-4 lg:px-12">
             <Button variant="secondary" className="py-2.5 px-5 md:mb-3">Pacotes</Button>
             <div className="mt-3 mb-14 flex justify-between">
                 <div>
@@ -63,7 +63,7 @@ export default function SpecialPackageSection() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {specialPackages.map(({ id, image, price, serviceTime, serviceType, title, tags }) => (
                     <CardPackage key={id} id={id} image={image} price={price} serviceTime={serviceTime} serviceType={serviceType} tags={tags} title={title} />
                 ))}

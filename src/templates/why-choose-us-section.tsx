@@ -4,7 +4,7 @@ import { Plus } from "lucide-react";
 
 export default function WhyChooseUsSection() {
     return (
-        <section className="mt-10 py-10 px-4 md:px-12">
+        <section id="about" className="mt-10 py-10 px-4 lg:px-12">
             <div>
                 <Button variant="secondary" className="py-2.5 px-5 md:mb-3">Veja como funciona</Button>
                 

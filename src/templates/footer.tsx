@@ -36,8 +36,8 @@ export default function Footer() {
     ]
 
     return (
-        <footer>
-            <div className="py-10 px-4 md:px-12">
+        <footer id="footer">
+            <div className="py-10 px-4 lg:px-12">
                 <div className="">
                     <h1 className="text-4xl md:text-5xl text-neutral-01 font-medium">Está com alguma dúvida?</h1>
                     <div className="block md:flex">
