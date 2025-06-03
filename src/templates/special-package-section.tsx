@@ -65,7 +65,7 @@ export default function SpecialPackageSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {specialPackages.map(({ id, image, price, serviceTime, serviceType, title, tags }) => (
-                    <CardPackage id={id} image={image} price={price} serviceTime={serviceTime} serviceType={serviceType} tags={tags} title={title} />
+                    <CardPackage key={id} id={id} image={image} price={price} serviceTime={serviceTime} serviceType={serviceType} tags={tags} title={title} />
                 ))}
             </div>
         </section>

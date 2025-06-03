@@ -58,7 +58,7 @@ export default function Footer() {
                         <p className="font-semibold">Siga em nossas redes:</p>
                         <div className="flex gap-3 mt-2">
                             {socialMediaLinks.map((link) => (
-                                <a href={link.url} className="px-5 rounded-full border border-neutral-01 font-semibold">{link.name}</a>
+                                <a key={link.name} href={link.url} className="px-5 rounded-full border border-neutral-01 font-semibold">{link.name}</a>
                             ))}
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default function Footer() {
                             <div key={links.title} className="flex flex-col">
                                 <span className="mb-5 font-medium text-neutral-01">{links.title}</span>
                                 {links.items.map((item) => (
-                                    <a href={item.url} className="mb-3">{item.name}</a>
+                                    <a key={item.name} href={item.url} className="mb-3">{item.name}</a>
                                 ))}
                             </div>
                         ))}

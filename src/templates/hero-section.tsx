@@ -16,7 +16,7 @@ export default function HeroSection() {
                     <div className="md:flex-1 mb-6">
                         <p className="mb-6 md:mb-10 text-neutral-400">Com uma equipe altamente treinada, nós temos todos os procedimentos para que seu processo seja o mais tranquilo e rápido. Uma consultoria completa para você e sua família não ter nenhuma preocupação na sua viagem.</p>
                         <Button className="py-2.5 px-5">
-                            <button className="mr-2">Saiba mais</button>
+                            Saiba mais
                             <ArrowRight className="text-white" />
                         </Button>
                     </div>

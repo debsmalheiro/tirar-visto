@@ -22,7 +22,7 @@ export default function CardPackage({ id, image, price, serviceTime, serviceType
             </div>
             <div className="flex my-6 gap-3">
                 {tags.map((tag) => (
-                    <div className={clsx('px-5 rounded-full font-semibold border capitalize', tag.label === "basic" ? "border-neutral-01" : "border-neutral-400 text-neutral-400")}>{tag.label}</div>
+                    <div key={tag.id} className={clsx('px-5 rounded-full font-semibold border capitalize', tag.label === "basic" ? "border-neutral-01" : "border-neutral-400 text-neutral-400")}>{tag.label}</div>
                 ))}
             </div>
             <p className="mb-4 text-2xl font-semibold">{title}</p>
