@@ -14,7 +14,7 @@ export default function Sidebar() {
     return (
         <>
             <button
-                className="md:hidden fixed top-4 left-4 z-50 text-3xl text-gray-800"
+                className="md:hidden top-4 left-4 z-50 text-3xl text-gray-800"
                 onClick={() => setIsOpen(true)}
             >
                 <Menu className='' />
@@ -31,7 +31,7 @@ export default function Sidebar() {
                 className={`md:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-md p-6 z-50 transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:static md:block`}
             >
                 <div className="flex float-right mb-6 md:hidden">
-                    <button onClick={() => setIsOpen(false)} className="text-2xl text-gray-800" aria-label="Fechar menu">
+                    <button onClick={() => setIsOpen(false)} className="text-2xl text-gray-800">
                         <X />
                     </button>
                 </div>
