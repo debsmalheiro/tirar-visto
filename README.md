@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# 🛂 Tirar Visto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page informativa para ajudar brasileiros a entenderem como tirar o visto americano em 2025.
 
-Currently, two official plugins are available:
+## 🧾 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto fornece informações claras e objetivas sobre o processo de solicitação do visto americano, com dicas atualizadas, tipos de visto e etapas necessárias.
 
-## Expanding the ESLint configuration
+## 💻 Layout
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A landing page foi projetada com foco em:
+- Clareza na comunicação
+- Boa experiência mobile e desktop
+- Estilo visual minimalista e moderno
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## ✨ Funcionalidades
+
+- Design responsivo
+- Ícones com Lucide
+- Estilização com Tailwind CSS 4
+- Estrutura leve e rápida com Vite
+- Navegação fluida com React 19
+
+## 🚀 Como rodar o projeto localmente
+
+```bash
+# Clone o repositório
+git clone https://github.com/debsmalheiro/tirar-visto.git
+
+# Acesse a pasta
+cd tirar-visto
+
+# Instale as dependências
+pnpm install
+
+# Rode o servidor de desenvolvimento
+pnpm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse: [http://localhost:5173](http://localhost:5173)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tecnologias e bibliotecas
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+| Ferramenta                | Descrição                                      |
+|---------------------------|-----------------------------------------------|
+| [React 19](https://react.dev/) | Biblioteca para construção da UI           |
+| [Vite](https://vitejs.dev/) | Build tool moderno e rápido para front-end    |
+| [Tailwind CSS 4](https://tailwindcss.com/) | Utilitário de estilização moderna |
+| [Lucide](https://lucide.dev/) | Ícones em SVG prontos para React           |
+| [clsx](https://github.com/lukeed/clsx) | Utilitário para classes condicionalmente  |
+
+## 📦 Deploy
+
+Hospedado na Vercel: [https://tirar-visto-lime.vercel.app](https://tirar-visto-lime.vercel.app)
+
+## 🙋‍♀️ Autoria
+
+Feito com 💙 por [Déborah Malheiro](https://www.linkedin.com/in/deborahmalheiro/)
