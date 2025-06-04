@@ -14,7 +14,7 @@ export default function Sidebar() {
 
     return (
         <>
-            <div className='md:hidden flex flex-row items-center'>
+            <div className='lg:hidden flex flex-row items-center'>
                 <button
                     className="top-4 left-4 z-50 text-3xl text-gray-800"
                     onClick={() => setIsOpen(true)}

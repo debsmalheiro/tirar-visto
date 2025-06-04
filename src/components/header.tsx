@@ -16,7 +16,7 @@ export default function Header() {
                 <div className="hidden lg:flex justify-center md:justify-start items-center">
                     <img src={Logo} alt="Logo Tirar Visto" className="w-40 h-auto" />
                 </div>
-                <nav className='hidden md:block md:ml-5'>
+                <nav className='hidden lg:block md:ml-5'>
                     <ul className='flex justify-between'>
                         {links.map((link) => (
                             <li key={link.href}>
